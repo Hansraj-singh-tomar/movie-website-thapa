@@ -17,7 +17,7 @@ const Movies = () => {
       <section className='movie-page'>
         <div className=" container grid grid-4-col">
           {movie.map((currMovie) => {
-              const { imdbID, Title, Poster } = currMovie;
+            const { imdbID, Title, Poster } = currMovie;
             const movieName = Title.substring(0,15);
               return (
                 <NavLink to={`movie/${imdbID}`} key={imdbID}>
